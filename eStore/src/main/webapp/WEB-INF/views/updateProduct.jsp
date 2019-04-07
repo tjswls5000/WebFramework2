@@ -5,13 +5,14 @@
 
 <div class="container-warpper">
 	<div class="container">
-		<h1>Add Product</h1>
+		<h1>update Product</h1>
 		<p class="lead">Fill the below information to add a product:</p>
 
 		<sf:form
-			action="${pageContext.request.contextPath}/admin/productInventory/addProduct"
+			action="${pageContext.request.contextPath}/admin/productInventory/updateProduct"
 			method="post" modelAttribute="product">
 
+			<sf:hidden path="id"/>
 			<div class="form-group">
 				<label for="name">Name</label>
 				<sf:input path="name" id="name" class="form-control" />
